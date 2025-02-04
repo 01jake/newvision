@@ -1,0 +1,469 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px; /* Padding inicial */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    transition: all 1s ease; /* Transición suave para todos los cambios */
+    position: fixed; /* Cambiar a fixed */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+header.scrolled {
+    padding: 10px; /* Reducir el padding cuando se haga scroll */
+    background-color: #333; /* Cambiar el color de fondo */
+    color: white; /* Cambiar el color del texto */
+}
+
+header .logo {
+    flex: 1;
+}
+
+header .logo img {
+    max-width: 100px; /* Ajustar el tamaño máximo del logo */
+    height: auto;
+    transition: width 1s ease;
+}
+
+header.scrolled .logo img {
+    width: 50px; /* Cambiar el tamaño del logo */
+}
+
+header .menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+header .search input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 5px;
+    flex-grow: 1;
+}
+
+header .search button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+header .search #close-search {
+    background-color: red;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 2px; /* Separación de 2px */
+    flex: 2;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+nav ul ul {
+    display: none; /* Ocultar submenús por defecto */
+    position: absolute;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegurar que los submenús estén por encima de otros elementos */
+}
+
+nav li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li:hover > ul {
+    display: block; /* Mostrar submenús al pasar el cursor */
+}
+
+nav ul ul li {
+    margin: 0;
+}
+
+nav ul ul a {
+    padding: 10px;
+    display: block;
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    position: relative; /* Para posicionar el texto sobre la imagen */
+    height: 700px; /* Reducir la altura de la sección hero */
+    overflow: hidden; /* Para recortar la imagen si es más grande */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir toda la sección */
+    z-index: 1; /* Asegurar que las imágenes estén por debajo de los submenús */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Color del texto */
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-text button {
+    background-color: #333; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sección Servicios */
+.servicios {
+    padding: 50px;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Sección Productos */
+.productos {
+    padding: 50px;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos-columnas {
+    display: block;
+    width: 48%;
+    margin: 0.5%; /* Reducir el margen para que estén más pegados */
+    float: left;
+    text-align: center;
+}
+
+.productos-columnas .text,
+.productos-columnas .imagen {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.productos-columnas img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Animación para agrandar la imagen */
+    z-index: 1; /* Asegurar que las imágenes estén por debajo de los submenús */
+}
+
+.productos-columnas .imagen img:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+    cursor: pointer;
+}
+
+/* Sección Nosotros */
+.nosotros {
+   
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+.nosotros h2 {
+    display: flex;
+    font-size: 2.5em; /* Tamaño de letra más grande */
+    justify-content: center;
+}
+
+.nosotros p {
+    color: #666; /* Color gris */
+}
+
+.nosotros a {
+    color: #007BFF; /* Color del enlace */
+    text-decoration: none;
+}
+
+.nosotros a:hover {
+    text-decoration: underline;
+}
+
+/* Sección pisos */
+.pisos {
+   display: flex;
+   align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.pisos h2 {
+    display: flex;
+    font-size: 2.5em; /* Tamaño de letra más grande */
+    justify-content: center;
+}
+
+.pisos p {
+    color: #666; /* Color gris */
+
+}
+
+.pisos a {
+    color: #007BFF; /* Color del enlace */
+    text-decoration: none;
+}
+
+.pisos a:hover {
+    text-decoration: underline;
+}
+
+
+/* Sección pisos */
+/* Sección Contacto */
+.contacto {
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.contacto h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    clear: both; /* Asegura que el footer no se superponga con otros elementos flotantes */
+    position: relative;
+    z-index: 10; /* Asegura que el footer esté por encima de otros elementos */
+}
+
+/* Media Queries - Adaptación a dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
+
+    header .menu-button {
+        display: block; /* Mostrar el botón de menú */
+    }
+
+    nav {
+        display: none; /* Ocultar el menú por defecto */
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column; /* Apila los elementos del menú verticalmente */
+        width: 100%;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    nav ul ul {
+        position: static; /* Hacer que los submenús se apilen */
+        box-shadow: none;
+    }
+
+    nav ul ul a {
+        padding: 10px 20px;
+    }
+
+    header .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    header .search input[type="text"] {
+        width: 100%;
+    }
+
+    .hero {
+        height: auto; /* Ajustar altura automáticamente */
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .servicios {
+        padding: 20px;
+    }
+
+    .productos-columnas {
+        width: 100%;
+        margin: 10px 0;
+        float: none;
+    }
+
+    .nosotros {
+        padding: 20px;
+    }
+
+    .nosotros h2 {
+        font-size: 2em;
+    }
+
+    .nosotros p {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .hero-text button {
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+
+    .servicios h2,
+    .productos h2,
+    .nosotros h2 {
+        font-size: 1.5em;
+    }
+
+    .productos-columnas .text h3,
+    .servicios-columnas .text h3 {
+        font-size: 1.2em;
+    }
+
+    .productos-columnas .text p,
+    .servicios-columnas .text p {
+        font-size: 0.9em;
+    }
+}
