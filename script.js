@@ -35,7 +35,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         return;
     }
 
-    var whatsappMessage = `Nombre: ${nombre}%0AEmail: ${email}%0ATeléfono: ${telefono}%0AServicio: ${servicio}%0AMensaje: ${mensaje} %0ADireccion: ${direccion } %0AApellido: ${apellido}`;
+    var whatsappMessage = `Nombre: ${nombre}%0AApellido: ${apellido} %0AEmail: ${email} %0ADireccion: ${direccion} %0ATeléfono: ${telefono}%0AServicio: ${servicio}%0AMensaje: ${mensaje} `;
     var whatsappURL = `https://wa.me/526623645921?text=${whatsappMessage}`; // Reemplaza con tu número de WhatsApp
 
     window.open(whatsappURL, '_blank'); // Abre el enlace de WhatsApp en una nueva pestaña
