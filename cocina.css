@@ -139,12 +139,12 @@ h2 {
 p {
     margin-bottom: 20px;
 }
-.stone-type {
+.kitchen-style {
     display: flex;
     align-items: start;
     margin-bottom: 40px;
 }
-.stone-type img {
+.kitchen-style img {
     width: 300px;
     height: auto;
     margin-left: 20px;
@@ -154,6 +154,24 @@ p {
 ul {
     margin-bottom: 20px;
     padding-left: 20px;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 /* Footer Styles */
