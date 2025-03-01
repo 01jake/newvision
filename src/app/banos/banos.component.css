@@ -1,0 +1,680 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+h1 {
+    color: #111;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+    max-width: 800px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+
+.containerbañosexterno {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.categories {
+    padding-top: 40px;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.categories h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contenedor-cocina {
+    display: flex;
+        gap: 20px;
+        align-items: flex-start;
+}
+
+.category {
+   
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.category.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.category img {
+    max-width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    margin-bottom: 10px;
+}
+
+.category p {
+    margin-bottom: 20px;
+}
+
+.category a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.category .nuevo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.container-baños {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+    padding: 20px;
+    color: black;
+}
+
+.text-content {
+    width: 50%;
+    padding: 20px;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.feature i {
+    color: #ffcc00;
+}
+
+.image-content {
+    width: 50%;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.guia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step i {
+    font-size: 24px;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    width: 48%;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-container {
+    display: flex;
+        gap: 40px;
+        flex-wrap: nowrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #222;
+    flex: 1; /* Hace que el texto ocupe el espacio disponible */
+}
+
+.testimonial img {
+    width: 50%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    gap: 6px;
+}
+
+.name {
+    text-align: left;
+}
+
+.details {
+    text-align: right;
+}
+
+.faq {
+    background-color: #fff3ee;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+hr {
+    width: 80px;
+    margin: 10px auto;
+    border: none;
+    border-top: 2px solid #ddd;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    flex: 1;
+    max-width: 300px;
+}
+
+.faq-item h3 {
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: bold;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.hero {
+    background-image: url('/baño-8.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.hero-content {
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #b3b3b3;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+
+/* Main Content Styles */
+.banos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bano {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.bano-texto {
+    flex: 1;
+    max-width: 500px;
+}
+
+.bano-texto h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.bano-texto p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.bano-texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bano-texto ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.bano-texto ul li::before {
+    content: "•";
+    color: #ff7f50;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.bano-imagen {
+    flex: 1;
+    max-width: 500px;
+}
+
+.bano-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 60px 0;
+}
+
+.contenedor {
+    text-align: center; /* Centra el título */
+    width: 90%;
+    margin: 0 auto; /* Centra el contenido en la página */
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el número de columnas según el ancho */
+    gap: 20px; /* Espaciado uniforme entre imágenes */
+    justify-content: center;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px; /* Mantiene una altura uniforme */
+    object-fit: cover; /* Asegura que las imágenes se vean bien sin deformarse */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria img:hover {
+    transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+}
+
+.cocina-content {
+    display: flex;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.containerr {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .transforma-info-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedordudas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-faq {
+        max-width: 100%;
+    }
+
+    .faq {
+        width: 90%;
+    }
+
+    .kitchen-style {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-cocina {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .kitchen-style img {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .testimonial-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .image-container img {
+        width: 100%;
+    }
+
+    .content {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .bano {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bano-texto {
+        max-width: 100%;
+    }
+
+    .bano-imagen {
+        max-width: 100%;
+    }
+
+    .testimonials {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    
+    .testimonial-container {
+        display: flex;
+                gap: 40px;
+                max-width: 1000px;
+                margin: 0px auto;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+    }
+    
+    .testimonial {
+        width: 50%;
+        background: white;
+        border-radius: 10px;
+        padding: 0px;
+        box-shadow:  0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .testimonial-content {
+        display: flex;
+                gap: 20px;
+                flex-direction: column;
+                align-items: center;
+    }
+    
+    .testimonial-text {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #222;
+        flex: 1;
+    }
+    
+    .testimonial img {
+        width: 90%;
+        height: 156px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .faq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .contenedordudas {
+        padding-bottom: 20px;
+    }
+
+    .titulo-faq {
+        font-size: 2rem;
+    }
+
+    .subtitulo-faq {
+        font-size: 0.9rem;
+    }
+
+    .faq-card {
+        padding: 10px 15px;
+    }
+
+    .pregunta {
+        font-size: 1rem;
+    }
+
+    .respuesta {
+        font-size: 0.9rem;
+    }
+
+    .ver-mas {
+        font-size: 0.9rem;
+    }
+
+    .steps {
+        margin-top: 10px;
+    }
+
+    .step-number {
+        font-size: 20px;
+    }
+
+    .step p {
+        font-size: 14px;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Aplica la animación a las imágenes */
+img.animated {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+img.animated.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
