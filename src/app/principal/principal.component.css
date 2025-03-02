@@ -453,8 +453,9 @@ h2, h1 {
         text-align: center;
     }
 
-    .services-text {
+      .services-text {
         max-width: 100%;
+        padding-bottom: 20px;
     }
 
     .cards {
