@@ -481,7 +481,11 @@ main {
     .feature {
         width: 100%;
     }
-
+   .contenedor-cocina img {
+        width: 100%;
+        height: auto; /* Mantiene la proporción de las imágenes */
+        object-fit: cover; /* Asegura que las imágenes se ajusten sin distorsionarse */
+    }
     .transforma-info-contenedor {
         grid-template-columns: 1fr;
     }
