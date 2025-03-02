@@ -596,6 +596,23 @@ main {
     .faq-item {
         max-width: 100%;
     }
+   .services-text{
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+   .image-content {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 0; /* Elimina cualquier margen */
+        padding: 0; /* Elimina cualquier padding */
+    }
+
+    .image-content img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 0; /* Elimina el borde redondeado */
+        max-width: 100%; /* Asegura que la imagen no se pase del borde */
+        object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+    }
 }
 
 @media (max-width: 480px) {
